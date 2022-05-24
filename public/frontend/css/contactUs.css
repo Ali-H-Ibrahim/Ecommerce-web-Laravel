@@ -1,0 +1,156 @@
+
+:root{
+  --background: white;
+  --background2: #ececeb;
+  --main-color:#fe7a15;
+  --second-color:#537ec8;
+  --third-color:#10316b;
+  --text-color:black;
+  --two-text-color: #727272;
+
+
+  --text-main: cursive;
+  --text2: 'Raleway',sans-serif;
+}
+
+.contact-page-sec .row{
+    margin-top: 45px;
+}
+.contact-page-sec{
+    background-color: var(--background);
+}
+.contact-info {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 20px 0px;
+    border-radius: 20px;
+    }
+    .contact-info-icon {
+    margin-bottom: 15px;
+    }
+    .contact-info-item {
+    background: var(--third-color);
+    padding: 30px 0px;
+    border-radius: 20px;
+    }
+    .contact-page-sec .contact-page-form h2 {
+    color: var(--third-color);
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 700;
+    }
+    .contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+    padding-left: 0;
+    }  
+    .contact-page-form.contact-form input {
+    margin-bottom: 5px;
+    }  
+    .contact-page-form.contact-form textarea {
+    height: 110px;
+    }
+    .contact-page-form.contact-form input[type="submit"] {
+    background: var(--third-color);
+    width: 150px;
+    border-color: var(--third-color);
+    }
+    .contact-info-icon i {
+    font-size: 48px;
+    color: #fda40b;
+    }
+    .contact-info-text p{margin-bottom:0px;}
+    .contact-info-text h2 {
+    color: #fff;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: var(--text-main);
+    }
+    .contact-info-text span {
+    color: var(--background2);
+    font-size: 16px;
+    
+    display: inline-block;
+    width: 100%;
+    }
+    
+    .contact-page-form input {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #f9f9f9;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    }
+    
+    .contact-page-form .message-input {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    }
+    .single-input-field textarea {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #f9f9f9;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    }
+    .single-input-fieldsbtn input[type="submit"] {
+    background: var(--main-color) none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 0;
+    text-transform: capitalize;
+    width: 150px;
+    margin-top: 20px;
+    font-size: 16px;
+    }
+    .single-input-fieldsbtn input[type="submit"]:hover{background:var(--third-color);transition: all 0.4s ease-in-out 0s;border-color:#071c34}
+    .single-input-field  h4 {
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-size: 14px;
+    }
+    .contact-page-form {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    }
+    
+    .contact-page-map {
+    margin-top: 36px;
+    }
+    .contact-page-form form {
+    padding: 20px 15px 0;
+    }
+   .map .title {
+        margin: 4rem 0 1rem 0;
+        text-align: center;
+      }
+      
+     .map .title h1 {
+        font-size: 3rem;
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        color: var(--third-color);
+        font-family: var(--text-main);
+      }
+      
+      .map .title h1::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -20%;
+        transform: translate(-50%, -50%);
+        background-color:var(--main-color) ;
+        width: 50%;
+        height: 0.4rem;
+        z-index: 1;
+      }

@@ -1,0 +1,349 @@
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+
+
+
+:root{
+    --background: #ffff;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --background2:#ECECEB ;
+    --two-text-color:#727272;
+
+
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+}
+
+
+/**********************************/
+/************ Cart CSS ************/
+/**********************************/
+.cart-page {
+    position: relative;
+    margin-top: 30px;
+    background: var(--background);
+}
+
+.cart-page .cart-page-inner {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: var(--background2);
+}
+
+.cart-page .table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+.cart-page .table i {
+    color: var(--background);
+}
+.cart-page .table .thead-dark th {
+    font-family: var(--text-main);
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-align: center;
+    background: transparent;
+    border-color: #dddddd;
+    border-bottom: none;
+    vertical-align: middle;
+}
+
+.cart-page .table td {
+    font-size: 16px;
+    vertical-align: middle;
+    color: var(--text-color);
+}
+
+.cart-page .table .img {
+    display: flex;
+    align-items: center;
+}
+
+.cart-page .table .img img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 15px;
+}
+
+.cart-page .table .img p {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    color: var(--text-color);
+    font-family: var(--text2);
+}
+
+.cart-page .table .qty {
+    display: inline-block;
+    width: 100px;
+    font-size: 0;
+}
+
+.cart-page .table button {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #dddddd;
+    background: var(--third-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.cart-page .table button.btn-minus {
+    border-radius: 4px 0 0 4px;
+}
+
+.cart-page .table button.btn-plus {
+    border-radius: 0 4px 4px 0;
+}
+
+.cart-page .table button.btn-cart {
+    width: auto;
+}
+
+.cart-page .table input {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    color: var(--main-color);
+    text-align: center;
+    background: #dddddd;
+    border: none;
+}
+
+.cart-page .coupon {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 0;
+}
+
+.cart-page .coupon input {
+    width: calc(100% - 135px);
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #999999;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-right: 15px;
+    transition: all .3s;
+    font-family: var(--text-main);
+    outline: none;
+}
+
+.cart-page .coupon input:focus {
+    border-color: var(--main-color);
+}
+
+.cart-page .coupon button {
+    width: 120px;
+    height: 40px;
+    padding: 2px 0;
+    font-size: 16px;
+    text-align: center;
+    color: var(--main-color);
+    background: #ffffff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    outline: none;
+    font-family: var(--text-main);
+}
+
+.cart-page .coupon button:hover {
+    color: #ffffff;
+    background: var(--main-color);
+}
+
+.cart-page .cart-summary {
+    position: relative;
+    width: 100%;
+}
+
+.cart-page .cart-summary .cart-content {
+    padding: 30px;
+    background: var(--background2);
+}
+
+.cart-page .cart-summary .cart-content h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--third-color);
+    font-family: var(--text-main);
+}
+
+.cart-page .cart-summary .cart-content p span,
+.cart-page .cart-summary .cart-content h2 span {
+    float: right;
+}
+
+.cart-page .cart-summary .cart-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 12px;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+    color: var(--third-color);
+    font-family: var(--text-main);
+}
+
+.cart-page .cart-summary .cart-btn button {
+    margin-top: 15px;
+    width: calc(50% - 15px);
+    height: 50px;
+    padding: 2px 5px;
+    text-align: center;
+    color: #ffffff;
+    background: var(--main-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-family: var(--text-main);
+}
+
+.cart-page .cart-summary .cart-btn button:hover {
+    color: var(--main-color);
+    background: #fff;
+    border:1px solid var(--main-color);
+  
+  
+}
+
+.cart-page .cart-summary .cart-btn button:first-child {
+    margin-right: 25px;
+    color: var(--main-color);
+    background: #ffffff;
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+
+.cart-page .cart-summary .cart-btn button:first-child:hover {
+    color: #ffffff;
+    background: var(--main-color);
+}
+.cart-summary .cart-content p{
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: var(--text2);
+}
+.cart-summary .cart-btn {
+    font-size: 16px;
+}
+/**********************************/
+/********** Wishlist CSS **********/
+/**********************************/
+.wishlist-page {
+    position: relative;
+    padding: 30px 0;
+    background: var(--background);
+}
+
+.wishlist-page .wishlist-page-inner {
+    padding: 30px;
+    background: var(--background2);
+}
+
+.wishlist-page .table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.wishlist-page .table .thead-dark th {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-color);
+    font-family: var(--text-main);
+    text-align: center;
+    background: transparent;
+    border-color: #dddddd;
+    border-bottom: none;
+    vertical-align: middle;
+}
+
+.wishlist-page .table td {
+    font-size: 16px;
+    vertical-align: middle;
+    color: var(--text-color);
+}
+
+.wishlist-page .table .img {
+    display: flex;
+    align-items: center;
+}
+
+.wishlist-page .table .img img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 15px;
+}
+
+.wishlist-page .table .img p {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.wishlist-page .table .qty {
+    display: inline-block;
+    /* width: 100px; */
+    font-size: 0;
+}
+
+.wishlist-page .table button {
+    /* width: 30px; */
+    /* height: 30px; */
+    font-size: 14px;
+    text-align: center;
+    color: var(--third-color);
+    background: none;
+    border: none;
+    border-radius: 4px;
+}
+.wishlist-page .table button:focus {
+    outline: none;
+}
+
+.wishlist-page .table button.btn-minus {
+    border-radius: 4px 0 0 4px;
+}
+
+.wishlist-page .table button.btn-plus {
+    border-radius: 0 4px 4px 0;
+}
+
+.wishlist-page .table button.btn-minus,
+.wishlist-page .table button.btn-plus {
+    transform: translateY(5px);
+}
+
+.wishlist-page .table button.btn-cart {
+    /* width: auto; */
+}
+
+.wishlist-page .table button i {
+    font-size: 27px;
+}
+.wishlist-page .table input {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    color: #f3f6ff;
+    text-align: center;
+    background: var(--main-color);
+    border: none;
+}
+

@@ -1,0 +1,226 @@
+
+:root {
+
+    --background: white;
+    --main-color:#fe7a15;
+    --second-color:#0191b4;
+    --third-coler:#08526d;
+    --backgroundBoxLogin: rgba(40,57,101,.9);
+    --titleLoginColor: white;
+    --underlineTitleColor: #1161ee;
+    --backgroundInputColor: rgba(255,255,255,.1);
+    --titleInputColor: #aaa;
+    --bottonLoginColor: #1161ee;
+    --bottonLoginColorHover: white;
+    --textButtonHover: #1161ee;
+    --lineColor: rgba(255,255,255,.2);
+    --keepPassColor: rgba(255,255,255,.4);
+    --facebookColor: rgb(108, 171, 243);
+    --googleColor: tomato;
+
+    /* types text */
+    --textOne: cursive;
+  }
+
+
+/* .cover-login-page{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/new\ search.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+.login-page{
+    /* color:#6a6f8c; */
+    display: flex;
+    justify-content: center;
+    font-family: var(--textOne);
+}
+
+.container-login-page{
+	height:75%;
+	position:absolute;
+	/* padding:90px 70px 50px 70px; */
+    padding: 75px 50px;
+	background: var(--backgroundBoxLogin);
+    /* z-index: 2; */
+}
+.login-page .container-login-page .sign-in-form,
+.login-page .container-login-page .sign-up-form,
+.login-page .container-login-page .forgot-form{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-page .container-login-page .sign-in,
+.login-page .container-login-page .sign-up,
+.login-page .container-login-page .forgot,
+.login-form .group .check{
+	display:none;
+}
+.login-page .container-login-page .tab,
+/* .login-page .container-login-page .group .label, */
+.login-page .container-login-page .group .button{
+	text-transform:uppercase;
+}
+.login-page .container-login-page .tab{
+
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+    color: var(--titleInputColor);
+}
+.login-page .container-login-page .sign-in:checked + .tab,
+.login-page .container-login-page .sign-up:checked + .tab,
+.login-page .container-login-page .forgot:checked + .tab{
+	color:var(--titleLoginColor);
+	border-color:var(--underlineTitleColor);
+}
+.login-form{
+	position:relative;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width: 100%;
+	color:var(--titleLoginColor);
+    text-align: center;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding: 15px 0;
+	border-radius:25px;
+	background:var(--backgroundInputColor);
+}
+/* .login-form .group input[data-type="password"]{
+	text-security: circle;
+	-webkit-text-security: circle;
+} */
+
+.login-page input:focus {
+    outline: none;
+}
+
+.login-form .group .label{
+	color:var(--titleInputColor);
+	font-size:12px;
+}
+
+.login-form .group .button{
+	background: var(--bottonLoginColor);
+}
+
+.login-page .login-form .group button {
+    cursor: pointer;
+}
+
+.login-page .login-form .group button:hover {
+    background-color: var(--bottonLoginColorHover);
+    color: var(--textButtonHover);
+}
+
+.login-page .login-form .confirmation-code {
+    display: none;
+}
+
+.login-page.login-form .signby {
+    background: none;
+}
+
+.login-page .login-form .group table {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.login-page .login-form .group table tr td i {
+    font-size: 3.5vw;
+}
+
+.login-page .login-form .group table tr .facebook i {
+    color: white;
+}
+.login-page .login-form .group table tr .facebook i:hover {
+    color: var(--facebookColor);
+}
+
+.login-page .login-form .group table tr .google i {
+    color: white;
+}
+.login-page .login-form .group table tr .google i:hover {
+    color: var(--googleColor);
+}
+
+.login-form .group label {
+    color: var(--keepPassColor);
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background: var(--keepPassColor);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background: var(--titleLoginColor);
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color: var(--titleLoginColor);
+}
+.login-form .group .check:checked + label .icon{
+	background: var(--underlineTitleColor);
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-page .container-login-page .sign-in:checked + .tab + .sign-up + .tab + .forgot + .tab + .login-form .sign-in-form{
+	transform:rotate(0);
+}
+.login-page .container-login-page .sign-in + .tab + .sign-up:checked + .tab + .forgot + .tab + .login-form .sign-up-form{
+	transform:rotate(0);
+}
+.login-page .container-login-page .sign-in + .tab + .sign-up + .tab + .forgot:checked + .tab + .login-form .forgot-form{
+	transform:rotate(0);
+}
+
+.login-page .hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background: var(--lineColor);
+}
+.login-page .foot-lnk{
+	text-align: center;
+    color: var(--titleInputColor);
+}

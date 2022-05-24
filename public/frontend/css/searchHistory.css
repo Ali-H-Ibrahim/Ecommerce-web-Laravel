@@ -1,0 +1,206 @@
+
+
+ 
+:root{
+    --background: white;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+  
+  
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+  }
+
+.search-history-page {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--text2);
+}
+
+.search-history-page .background {
+    position: fixed;
+    z-index: -2;
+    bottom: 100px;
+    right: 100px;
+}
+
+.search-history-page input[type=checkbox] {
+    width: 11px;
+    height: 11px;
+}
+
+.search-history-page .title {
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-family: var(--text-main);
+}
+.search-history-page .container-search-history {
+    float: right;
+    padding-top: 5%;
+    padding-right: 2vw;
+    color: var(--text-color);
+}
+
+.search-history-page .edit-buttons {
+    color: var(--text-color);
+}
+
+.search-history-page .container-search-history table {
+    border: none;
+    border-radius: 15px;
+    background: none;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 15px;
+    border-collapse: collapse; /* Remove space between the cell*/
+
+}
+
+.search-history-page .container-search-history table tr:hover {
+    background: var(--main-color);
+    color: white;
+    width: 100%;
+}
+
+.search-history-page td {
+    padding: 10px;
+    font-size: 17px;
+    font-family: var(--text2);
+}
+
+.search-history-page .search-content {
+    width: 50vw;
+}
+
+.search-history-page table .del {
+    cursor: pointer;
+}
+
+.search-history-page .edit-search-history {
+    position: fixed;
+    top: 100px;
+    left: 2vw;
+    width: auto;
+    height: 80%;
+    background: none;
+}
+
+.search-history-page .edit-search-history .title {
+    color: var(--main-color);
+}
+
+.search-history-page .del-search-history button {
+    background: var(--main-color);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    border-radius: 11px;
+    font-family: var(--text-main);
+}
+
+
+/******************************************** Mobile ********************************************/
+
+.search-history-page-mobile {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--text2);
+}
+
+.search-history-page-mobile .background {
+    position: fixed;
+    z-index: -2;
+    bottom: 0;
+    right: 0;
+}
+
+.search-history-page-mobile .background img {
+    width: 100%;
+    height: auto;
+}
+
+.search-history-page-mobile input[type=checkbox] {
+    width: 11px;
+    height: 11px;
+}
+
+.search-history-page-mobile .top-search {
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.search-history-page-mobile .table-search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-history-page-mobile .top-search .title {
+    color: var(--main-color);
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-family: var(--text-main);
+}
+
+.search-history-page-mobile .edit-buttons {
+    color: var(--text-color);
+}
+
+.search-history-page-mobile .del-search-history button {
+    background: var(--main-color);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    border-radius: 11px;
+    font-family: var(--text-main);
+}
+
+.search-history-page-mobile .save-search-history {
+    font-size: 15px;
+}
+
+.search-history-page-mobile .container-search-history-mobile table {
+    color: var(--text-color);
+    background-color: rgba(0,0,0,.4);
+    border-radius: 15px;
+}
+
+.search-history-page-mobile td {
+    padding: 5px;
+    font-size: 12px;
+    font-family: var(--text2);
+}
+
+.search-history-page-mobile table .del {
+    cursor: pointer;
+}
+
+.search-history-page-mobile .search-content {
+    width: 50vw;
+}
+
+@media only screen and (min-width: 1024px){
+    .search-history-page {
+        display: block;
+    }
+    .search-history-page-mobile {
+        display: none;
+    }
+}
+  
+@media only screen and (max-width: 1023px){
+    .search-history-page {
+        display: none;
+    }
+    .search-history-page-mobile {
+        display: block;
+    }
+}
+ 

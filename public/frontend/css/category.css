@@ -1,0 +1,221 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i');
+
+
+/*
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Quattrocento Sans', sans-serif;
+
+*/
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+
+@import url(jquery-ui.css);
+
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+
+ 
+:root{
+  --background: white;
+  --background2: #ececeb;
+  --main-color:#fe7a15;
+  --second-color:#537ec8;
+  --third-color:#10316b;
+  --text-color:black;
+  --two-text-color: #727272;
+
+
+  --text-main: cursive;
+  --text2: 'Raleway',sans-serif;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+blockquote {
+  margin: 20px 0 20px;
+  padding: 30px;
+}
+ 
+/*------------------------------------ All Pages ------------------------------------*/
+
+.shop-box-inner {
+  background: var(--background);
+  padding: 30px 0;
+}
+
+.sidebar-shop-left {
+  background: var(--background2);
+  padding: 25px;
+  border-radius: 15px;
+}
+.all-title-box{
+  background: url(/frontend/img/all-bg-title.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+  padding: 70px 0px;
+  position: relative;
+  /* margin-bottom: 2rem; */
+}
+.all-title-box::before{
+  background: rgba(0,0,0,0.6);
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.all-title-box h2{
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 30px;
+  color: var(--main-color);
+}
+ 
+ 
+.filter-sidebar-left{
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+.title-left{
+  font-size: 16px;
+  border-bottom: 3px solid #010101;
+  margin-bottom: 20px;
+}
+.title-left h3{
+  font-weight: 700;
+  color: var(--main-color);
+  font-size: 20px;
+  font-family: var(--text-main);
+}
+.form-check label {
+  color: var(--text-color);
+  font-family: var(--text2);
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.list-group-item {
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+.text-muted {
+  padding: 10px 0px;
+}
+.filter-price-left{
+  margin-bottom: 20px;
+}
+.slide-range .ui-slider-handle {
+  background-color: var(--main-color);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 21px;
+  top: -6px;
+  transition: none 0s ease 0s;
+  width: 21px;
+  box-shadow: 0px 0px 6.65px 0.35px rgba(0,0,0,0.15);
+  outline: none;
+}
+.slide-range .ui-slider-range {
+  background-color: var(--main-color);
+  border-radius: 0;
+}
+.slide-range {
+  background: var(--second-color);
+  border: medium none;
+  border-radius: 50px;
+  float: left;
+  height: 10px;
+  margin-top: 14px;
+  width: 100%;
+}
+.price-box-slider .price-range{
+  clear: both;
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  /* color: var(--third-coler); */
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.price-box-slider .price-range .inner-price-range {
+  font-weight: bold;
+  color: var(--text-color);
+  font-family: var(--text-main);
+}
+.price-box-slider .price-range .inner-price-range input{
+  margin-top: 5px;
+  color: var(--third-color);
+  background: none;
+  width: 25%;
+  outline: none;
+}
+.price-box-slider .price-range button{
+  border: none;
+  color: var(--second-color);
+  float: right;
+  font-size: 2rem;
+  margin-top: -2%;
+}
+.brand-box {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-size: 15px;
+}
+
+.product-item-filter{
+  border-bottom: 1px solid #010101;
+  border-top: 1px solid #010101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+ 
+
+
+.box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.br-box li{
+  font-size: 15px;
+}

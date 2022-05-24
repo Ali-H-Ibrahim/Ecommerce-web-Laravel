@@ -1,0 +1,45 @@
+
+:root{
+  --background: white;
+  --main-color:#fe7a15;
+  --second-color:#537ec8;
+  --third-color:#10316b;
+  --text-color:black;
+
+
+  --text-main: cursive;
+  --text2: 'Raleway',sans-serif;
+}
+
+.navbar-bottom-mob {
+  width: 100%;
+  background-color: var(--third-color); 
+  z-index: 1000;
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+}
+
+.navbar-bottom-mob div {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+
+.navbar-bottom-mob div i {
+  font-size: 25px;
+  color: var(--background);
+  padding: 7px 0;
+}
+
+@media only screen and (min-width: 1024px){
+  .navbar-bottom-mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1023.5px){
+  .navbar-bottom-mob {
+    display: block;
+  }
+}
+

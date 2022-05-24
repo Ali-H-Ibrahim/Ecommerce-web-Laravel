@@ -1,0 +1,117 @@
+
+/**********************************/
+/********** Checkout CSS **********/
+/**********************************/
+:root{
+    --background: #ffff;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --background2:#ECECEB ;
+    --two-text-color:#727272;
+
+
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+}
+.main-checkout{
+color: var(--text-color);
+font-family: var(--text2);
+font-weight: 400;
+background: var(--background);
+}
+.checkout {
+    position: relative;
+    padding-top: 30px;
+}
+.checkout label {
+    font-family: var(--text-main);
+    font-size: 12px;
+}
+.checkout input {
+    font-family: var(--text2);
+}
+.checkout input::placeholder {
+    color: var(--text-color);
+}
+.checkout .checkout-inner {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: var(--background2);
+    border-radius: 0.8rem;
+}
+
+.checkout .billing-address,
+.checkout .shipping-address {
+    position: relative;
+    width: 100%;
+}
+
+.checkout .shipping-address {
+    display: none;
+    margin-top: 30px;
+}
+
+.checkout .billing-address h2,
+.checkout .shipping-address h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: var(--text-main);
+    color: var(--main-color);
+    
+}
+
+.checkout .checkout-summary,
+.checkout .checkout-payment {
+    position: relative;
+    width: 100%;
+}
+
+.checkout .checkout-summary h1,
+.checkout .checkout-payment h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--third-color);
+    font-family: var(--text-main);
+}
+
+.checkout .checkout-summary,
+.checkout .checkout-payment .payment-methods {
+    padding: 30px;
+    background: var(--background);
+    margin-bottom: 30px;
+}
+.checkout .checkout-summary p {
+    font-size: 12px;
+}
+
+.checkout .checkout-summary p.sub-total,
+.checkout .checkout-summary p.ship-cost {
+    padding-top: 15px;
+    border-top: 1px solid var(--background);
+}
+
+.checkout .checkout-summary p span,
+.checkout .checkout-summary h2 span {
+    float: right;
+}
+
+.checkout .checkout-summary h2 {
+    font-size: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+    font-family: var(--text-main);
+}
+
+.checkout .checkout-payment .payment-methods .payment-content {
+    display: none;
+}
+
+
+.checkout .form-control{
+    color:var(--two-text-color);
+    background-color: var(--background);
+}
+/* end checkout */

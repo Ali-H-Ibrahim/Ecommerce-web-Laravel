@@ -1,0 +1,99 @@
+
+
+:root{
+    --background: white;
+    --background2: #ececeb;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --two-text-color: #727272;
+  
+  
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+}
+
+
+.personal-page-mobile {
+    height: 100vh;
+    background-color: var(--background);
+    font-family: var(--text2);
+    padding-top: 25px;
+}
+
+.personal-page-mobile .top-page {
+    background-color: var(--background2);
+    padding: 17px;
+}
+
+.personal-page-mobile .top-page div {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-page-mobile .profile-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.personal-page-mobile .profile-name {
+    color: var(--main-color);
+    font-family: var(--text-main);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.personal-page-mobile .status-member {
+    color: var(--second-color);
+    font-size: 11px;
+}
+
+.personal-page-mobile .container-middle-page {
+    /* background-color: var(--tableInfoColor); */
+    border-radius: 10px;
+    padding-top: 5px;
+    color: var(--text-color);
+    font-family: var(--text2);
+}
+
+.personal-page-mobile .title {
+    padding: 4px;
+    margin: 10px;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.personal-page-mobile .personal-info {
+    font-size: 10px;
+    padding-left: 5px;
+    font-family: cursive;
+    background-color: var(--background2);
+}
+
+.personal-page-mobile .personal-info img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.personal-page-mobile .open-close-personal-info {
+    float: right;
+}
+
+.personal-page-mobile .personal-info {
+    display: none;
+    font-family: var(--text2);
+    padding: 10px;
+}
+
+.personal-page-mobile .open-icon-person {
+    display: block;
+}
+.personal-page-mobile .close-icon-person {
+    display: none;
+}

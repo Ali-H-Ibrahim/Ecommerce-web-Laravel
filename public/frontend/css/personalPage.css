@@ -1,0 +1,253 @@
+
+:root {
+    --background: white;
+    --background2: #ececeb;
+    --main-color: #fe7a15;
+    --second-color: #537ec8;
+    --third-color: #10316b;
+    --text-color: black;
+    --two-text-color: #727272;
+
+
+    --text-main: cursive;
+    --text2: 'Raleway', sans-serif;
+}
+
+.container-personal-page {
+    margin: 0 0;
+    font-family: var(--text2);
+    background: var(--background);
+}
+
+.container-personal-page .personal-row .img img {
+    width: 100%;
+}
+
+.container-personal-page .personal-row .info {
+    position: absolute;
+    top: 100px;
+    left: 45%;
+}
+
+.container-personal-page .personal-picture {
+    display: flex;
+    justify-content: center;
+    /* transform: translate3d(0,-100%,0); */
+    /* position: absolute;
+    top: 100px;
+    left: 44%; */
+    padding: 10px;
+}
+
+.container-personal-page .account-name {
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding-top: 1vh;
+    font-family: var(--text-main);
+    /* transform: translate3d(0,-300%,0); */
+    /* position: absolute;
+    top: 260px;
+    left: 42.5%; */
+}
+
+.container-personal-page .personal-row .status-member {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-top: 1vh;
+    color: var(--third-color);
+    /* transform: translate3d(0,-400%,0); */
+    /* position: absolute;
+    top: 300px;
+    left: 48.5%; */
+}
+
+.container-personal-page .img-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.container-personal-page .table-component, .table-component {
+    padding-top: 75px;
+}
+
+.container-personal-page .table-component, .table-component tr {
+    display: flex;
+    justify-content: center;
+}
+
+.container-personal-page .title-card {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--titleCardColor);
+    font-family: var(--text-main);
+}
+
+.container-personal-page .info-card {
+    font-size: 13px;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-personal-page .property-card {
+    margin: 4vw;
+    cursor: pointer;
+    height: 300px;
+    width: 200px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.container-personal-page .property-image img {
+    height: 180px;
+    width: 200px;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.property-description {
+    background: var(--third-color);
+    color: var(--main-color);
+    height: 120px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.property-card:hover .property-description {
+    height: 180px;
+}
+
+.property-card:hover .property-image img {
+    height: 120px;
+}
+
+/************************************ Modal personal information ************************************/
+
+.person-info {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 75px;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: var(--text2);
+}
+
+.person-info .container-info {
+    margin: auto;
+    padding: 0px;
+    /* border: 1px solid #888; */
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    background-color: var(--background2);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.person-info .close-info-modal {
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.person-info .close-info-modal:hover, .close-info-modal:focus {
+    color: var(--third-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.person-info .info-header {
+    padding: 5px 16px;
+    color: var(--main-color);
+    font-size: 2vw;
+    font-family: var(--text-main);
+}
+
+.person-info .info-body {
+    padding: 2px 16px;
+}
+
+.person-info .info-body table {
+    margin: 10px;
+}
+
+.person-info .info-body table td h4 {
+    color: var(--text-color);
+}
+
+.person-info .name table tr td {
+    padding: 20px;
+}
+
+.person-info .img-info {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+}
+
+.person-info .img-modal img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .personal-page {
+        display: block;
+    }
+
+    .personal-page-mobile {
+        display: none;
+    }
+
+    /* .person-info .container-info {
+        width: 25%;
+    } */
+}
+
+@media only screen and (max-width: 1023px) {
+    .personal-page {
+        display: none;
+    }
+
+    .personal-page-mobile {
+        display: block;
+    }
+}
+

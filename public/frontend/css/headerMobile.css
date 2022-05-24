@@ -1,0 +1,320 @@
+
+:root{
+  --background: white;
+  --background2: #ececeb;
+  --main-color:#fe7a15;
+  --second-color:#537ec8;
+  --third-color:#10316b;
+  --text-color:black;
+  --two-text-color: #727272;
+
+
+  --text-main: cursive;
+  --text2: 'Raleway',sans-serif;
+}
+
+/********************************* header *********************************/
+
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--background);
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: inline-flex;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #401c60;
+  text-align: center;
+  padding: 15px 10px 10px;
+  text-decoration: none;
+  
+}
+
+.topnav a.logo {
+  color: #fe7a15;  
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.topnav i {
+  font-size: 27px;
+  transform: translate3d(0,30%,0);
+  color: var(--text-color);
+}
+.topnav img {
+  width: 100px;
+}
+
+
+.topnav .search-m {
+  position: fixed;
+  right: 10px;
+}
+
+.topnav .notifications {
+  position: fixed;
+  right: 25px;
+}
+/* .topnav .button .icon-wrap {
+  transform: none;
+} */
+
+/* .topnav .button .icon-wrap i {
+  transform: translate3d(-20%,20%,0);
+} */
+
+
+.topnav .notifications {
+  display: block;
+  font-size: 15px;
+}
+.topnav .notifications .icon_wrap {
+  transform: none;
+  margin-right: 15px;
+}
+
+.topnav .notifications .icon_wrap span.badge {
+  transform: translate3d(-15px, -10px, 0);
+  font-size: 8px;
+}
+
+.topnav .notification_dd {
+  transform: none;
+  width: 300px;
+  /* margin: 0 15px; */
+}
+.topnav .notifications .notification_dd::before {
+  right: 45px;
+}
+
+.topnav .popup {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  height: auto;
+}
+
+.topnav .popup .shadow {
+  display: none;
+}
+
+.topnav .popup .inner_popup {
+  transform: none;
+  position: fixed;
+  top: 50px;
+  left: auto;
+  right: 10px;
+  width: auto;
+}
+
+.topnav .popup .notification_dd li {
+  padding: 5px 10px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************* side category *********************************/
+
+.category-nav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 5; 
+  top: 0; 
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+  font-family: var(--text2);
+}
+
+.category-nav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.category-nav .title {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  font-family: var(--text-main);
+}
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --primary-c: #2196F3;
+  --secondary-c: #B2D7F5;
+  
+  --white: #FDFBFB;
+  
+  --text: #082943;  
+  --bg: var(--primary-c);
+}
+
+.category-nav ul {
+  list-style-type: none;
+  padding-left: 50px;
+  margin: 50px 0 0 20px;
+}
+
+.category-nav li {
+  display: block;
+  position: relative;
+}
+
+.category-nav input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.category-nav .check {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  transform: translate3d(-150%,-130%,0);
+  background: var(--secondary-c);
+}
+
+.category-nav input[type=checkbox]:checked ~ .check {
+  background: var(--primary-c); 
+}
+.category-nav label { 
+  cursor: pointer; 
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.category-nav .sub-cat {
+  display: none;
+}
+.category-nav ul ul {
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0,-15%,0);
+}
+.category-nav ul ul li {
+  padding: 5px 0;
+  font-size: 13px;
+}
+.category-nav input[type=checkbox]:checked ~ .sub-cat {
+  display: block;
+}
+/* Change styles for span and cancel button on extra small screens */  
+
+@media only screen and (min-width: 1024px){
+      
+  .topnav {
+      display: none;
+  }
+  .header-laptop {
+      display: block;
+  }
+}
+
+@media only screen and (max-width: 1023.5px){
+
+  .header-laptop {
+      display: none;
+  }
+  .navbar .icon-bar{
+      width: 100%;
+      margin-left: 0;
+      left: 0;
+  }
+}
+
+
+
+/********************************* side search *********************************/
+
+.searchnav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5; 
+  top: 0; 
+  right: 0;
+  background-color: var(--background);
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+  font-family: var(--text2);
+}
+
+.searchnav input[type=search] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 75%;
+  background: none;
+  border-bottom: 2px solid var(--text-color);
+  color: var(--text-color);
+  margin-left: 25px;
+}
+.searchnav input[type=search]::placeholder {
+  color: var(--two-text-color);
+}
+.searchnav input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+}
+.searchnav input[type=search]:focus::-webkit-search-cancel-button {
+  opacity: .3;
+  pointer-events: all;
+}
+
+.searchnav input[type=search]:focus {
+  outline: none;
+}
+
+.searchnav button {
+  color: var(--text-color);
+  padding: 15px 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.searchnav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 36px;
+  padding: 8px 32px 8px 8px;
+  text-decoration: none;
+  color: var(--text-color);
+}

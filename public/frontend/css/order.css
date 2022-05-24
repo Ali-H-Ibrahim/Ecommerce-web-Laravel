@@ -1,0 +1,250 @@
+
+:root{
+    --background: white;
+    --background2: #ececeb;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --two-text-color: #727272;
+  
+  
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+}
+
+.order-page {
+    background-color: var(--background);
+    font-family: var(--text2);
+}
+
+.order-page .title-page {
+    font-size: 6vw;
+    letter-spacing: 2.5px;
+    color: var(--main-color);
+    font-family: var(--text-main);
+}
+
+.order-page table {
+    width: 100%;
+}
+
+.order-page .types {
+    width: 300px;
+}
+
+.order-page .types div {
+    margin: 25px 0 25px 25px;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.order-page .types .order {
+    color: white;
+    background-color: #537ec8;
+    font-size: 15px;
+}
+
+.order-page .types .active {
+    background-color: var(--main-color);
+}
+
+.order-page .table1 .td1 {
+    width: 20vw;
+}
+.order-page .table1 .td2 {
+    width: 80vw;
+}
+
+.order-page .table2 {
+    text-align: center;
+}
+.order-page .table2 table td {
+    width: 10vw;
+}
+.order-page .title-table {
+    text-decoration: underline;
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--text-main);
+    position: absolute;
+    top: 100px;
+}
+.order-page .title-table td {
+    font-size: 19px;
+}
+
+.order-page .tables .contain {
+    margin-top: 100px;
+    color: var(--text-color);
+}
+.order-page .tables td {
+    font-size: 15px;
+}
+
+.order-page i{
+    font-size: 20px;
+}
+
+.order-page .contain table img {
+    width: 75px;
+    height: 75px;
+}
+
+.order-page .table-orders-received {
+    display: none;
+}
+
+.order-page .table-orders-shipping {
+    display: none;
+}
+
+.order-page .table-orders-return {
+    display: none;
+}
+
+/******************************************************* Order Page Mobile *******************************************************/
+
+.order-page-mobile {
+    background: var(--background);
+    padding-top: 25px;
+}
+
+.order-page-mobile .top-order-page img {
+    height: 25vh;
+    width: 100%;
+    font-family: var(--text2);
+}
+
+.order-page-mobile .title-page-mobile {
+    text-align: center;
+    font-size: 40px;
+    color: var(--main-color);
+    font-family: var(--text-main);
+}
+
+.order-page-mobile table .title-table {
+    color: var(--text-color);
+    font-family: var(--text-main);
+}
+.order-page-mobile table .title-table td {
+    color: var(--main-color);
+    font-family: var(--text-main);
+}
+
+.order-page-mobile table { 
+    padding-left: 15px;
+}
+
+.order-page-mobile table tr {
+    margin: 10px 0;
+}
+
+.order-page-mobile table td {
+    text-align: center;
+    width: 10%;
+    color: var(--text-color);
+}
+@media only screen and (max-width: 1024px){
+    .order-page-mobile td {
+        font-size: 15px;
+    }
+    .order-page-mobile img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .order-page-mobile td {
+        font-size: 13px;
+    }
+    .order-page-mobile img {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .order-page-mobile td {
+        font-size: 10px;
+    }
+    .order-page-mobile img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.order-page-mobile .type-order  {
+    background-color: var(--background2);
+    padding: 1vh 2vh;
+    color: var(--text-color);
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/*         tables orders         */
+.order-page-mobile .table-mobile-orders-all {
+    display: none;
+}
+
+.order-page-mobile .table-mobile-orders-received {
+    display: none;
+}
+
+.order-page-mobile .table-mobile-orders-shipping {
+    display: none;
+}
+
+.order-page-mobile .table-mobile-orders-return {
+    display: none;
+}
+
+
+/*       open & close icon       */
+.order-page-mobile .open-close-order-all {
+    float: right;
+}
+.order-page-mobile .open-close-order-all .close-order-all {
+    display: none;
+}
+
+.order-page-mobile .open-close-recived-order {
+    float: right;
+}
+.order-page-mobile .open-close-recived-order .close-recived-order {
+    display: none;
+}
+
+.order-page-mobile .open-close-shipping-order {
+    float: right;
+}
+.order-page-mobile .open-close-shipping-order .close-shipping-order {
+    display: none;
+}
+
+.order-page-mobile .open-close-return-order {
+    float: right;
+}
+.order-page-mobile .open-close-return-order .close-return-order {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    .order-page {
+        display: block;
+    }
+    .order-page-mobile {
+        display: none;
+    }
+}
+  
+@media only screen and (max-width: 1023px){
+    .order-page {
+        display: none;
+    }
+    .order-page-mobile {
+        display: block;
+    }
+}

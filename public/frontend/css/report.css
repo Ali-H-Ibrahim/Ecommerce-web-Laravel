@@ -1,0 +1,149 @@
+
+:root{
+    --background: #ffff;
+    --background2:#ECECEB ;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --two-text-color:#727272;
+
+
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+}
+
+.cover-report-page {
+    display: flex;
+    justify-content: center;
+}
+
+.report-page {
+    width: 750px;
+    background: var(--background);
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-family: var(--text2);
+}
+
+.report-page .container-report-page {
+    padding: 0 100px;
+}
+
+.report-page .top-page .title-page {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: var(--main-color);
+    font-weight: bold;
+    padding-top: 25px;
+    font-family: var(--text-main);
+}
+
+.report-page .top-page .img img {
+    width: 100%;
+    height: auto;
+}
+
+.report-page .top-page .text {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 100px 0;
+    font-family: var(--text2);
+    color: var(--text-color);
+}
+
+.report-page .top-page .star {
+    text-align: center;
+    color: var(--main-color);
+    padding: 20px 20px 40px;
+    font-size: 18px;
+    font-family: var(--text-main);
+}
+
+.report-page .middle-page .group {
+    padding-bottom: 20px;
+}
+
+.report-page .middle-page .group .icon {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--text2);
+    color: var(--third-color);
+}
+
+.report-page .middle-page .group .input div{ 
+    font-size: 13px;
+    font-family: var(--text2);
+    color: var(--text-color);
+}
+
+.report-page .middle-page .group .input input[type=text] , 
+.report-page .middle-page .group .input input[type=email] ,
+.report-page .middle-page .group .input input[type=tel] {
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    width: 100%;
+    background: none;
+    outline: none;
+    height: 20px;
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+
+.report-page .middle-page .group .input div input[type=checkbox] {
+    border-radius: 50%;
+}
+
+.report-page .middle-page .form-group input{
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 7px 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media only screen and (min-width: 1024px){
+    .report-page .container-report-page {
+        padding: 0 100px;
+    }
+}
+  
+@media only screen and (max-width: 1023px){
+    .report-page .container-report-page {
+        padding: 10px;
+    }
+    .report-page .top-page .text {
+        font-size: 15px;
+        padding: 30px 30px 0;
+    }
+    .report-page .top-page .star {
+        font-size: 15px;
+    }
+    .report-page .middle-page .group .icon {
+        font-size: 12px;
+    }
+    .report-page .middle-page .group .input div {
+        font-size: 10px;
+    }
+    .report-page .middle-page .group .input div input[type=checkbox] {
+        width: 10px;
+        height: 10px;
+    }
+    .report-page .middle-page .send button {
+        font-size: 12px;
+    }
+    .report-page .top-page .title-page {
+        font-size: large;
+        padding-top: 10px;
+    }
+}
+ 

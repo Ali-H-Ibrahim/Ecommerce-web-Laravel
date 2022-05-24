@@ -1,0 +1,199 @@
+
+
+:root {
+    --background: white;
+    --background2: #ececeb;
+    --main-color: #fe7a15;
+    --second-color: #537ec8;
+    --third-color: #10316b;
+    --text-color: black;
+    --two-text-color: #727272;
+
+
+    --text-main: cursive;
+    --text2: 'Raleway', sans-serif;
+}
+
+
+
+.follow-up {
+    width: 100%;
+    background: var(--background);
+}
+
+.follow-up .top {
+    padding: 100px;
+}
+
+.follow-up .top .title {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: var(--main-color);
+    font-family: var(--text-main);
+    font-weight: bold;
+    transform: translateY(150%);
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.follow-up .top .img img {
+    width: 40%;
+    height: auto;
+    transform: translateX(150%);
+}
+
+.follow-up .middle .brands {
+    padding: 50px 100px;
+    background: var(--background2);
+    text-align: center;
+}
+
+.follow-up .middle .brands .title-brand {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: var(--text-main);
+    color: var(--main-color);
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.follow-up .middle .brands .title-brand span {
+    width: 100px;
+    height: 3px;
+    background: var(--main-color);
+    transform: translate3d(0%,1500%,0);
+    position: absolute;
+}
+
+.follow-up .middle .brands .body-brand .img-brand img {
+    width: 150%;
+    height: auto;
+    transform: translateX(-25%);
+}
+
+.follow-up .middle .brands .body-brand .cards .brand {
+    display: inline-flex;
+    border: 3px solid var(--third-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px;
+    cursor: pointer;
+    background: white;
+    font-family: var(--text2);
+}
+.follow-up .middle .brands .body-brand .cards .brand:hover {
+    border: 3px solid rgb(47, 218, 47);
+}
+
+.follow-up .middle .brands .body-brand .cards .brand .img img {
+    width: 100px;
+    height: auto;
+}
+
+.follow-up .middle .brands .body-brand .cards .brand .title {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    font-family: var(--text2);
+}
+
+.follow-up .middle .brands .body-brand .cards .brand .stop i {
+    font-size: 25px;
+}
+
+.follow-up .middle .brands .body-brand .cards .brand .stop i:hover {
+    color: red;
+}
+
+.follow-up .middle .products {
+    padding: 50px 100px;
+}
+
+.follow-up .middle .products .title-product {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: var(--text-main);
+    color: var(--main-color);
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.follow-up .middle .products .title-product span {
+    width: 100px;
+    height: 3px;
+    background: var(--main-color);
+    transform: translate3d(0%,1500%,0);
+    position: absolute;
+}
+
+.follow-up .middle .products .groub {
+    display: inline-flex;
+    width: 100%;
+}
+
+.follow-up .middle .products .groub .inner-groub {
+    display: inline-flex;
+    width: 50%;
+}
+
+.follow-up .middle .products .groub .inner-groub .box .rating i {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1023.5px) {
+    .follow-up .middle .products {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .follow-up .top {
+        padding: 50px;
+    }
+    .follow-up .top .title {
+        font-size: 25px;
+    }
+    .follow-up .middle .products .groub .inner-groub {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .follow-up .top {
+        padding: 50px;
+    }
+    .follow-up .top .title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .follow-up .middle .brands {
+        padding: 50px 0;
+    }
+    .follow-up .middle .products .groub {
+        display: block;
+    }
+    .follow-up .middle .products .groub .inner-groub {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .follow-up .top {
+        padding: 50px 10px;
+    }
+    .follow-up .top .title {
+        font-size: 25px;
+        text-align: center;
+        transform: none;
+    }
+    .follow-up .top .img {
+        text-align: center;
+    }
+    .follow-up .top .img img {
+        width: 75%;
+        transform: none;
+    }
+}

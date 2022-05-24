@@ -1,0 +1,191 @@
+
+
+:root {
+    --active-color: rgba(76, 217, 100, 1);
+}
+
+:root{
+    --background: #ffff;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --background2:#ECECEB ;
+    --two-text-color:#727272;
+
+
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+}
+
+.setting-notification-mobile {
+    background: var(--background);
+}
+
+.setting-notification-mobile .top .title .img-title img {
+    width: 60%;
+    height: auto;
+}
+
+.setting-notification-mobile .top .title .text {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: var(--text-main);
+    text-align: center;
+    position: absolute;
+    top: 8vw;
+    right: 4vw;
+    color: var(--main-color);
+}
+
+
+.setting-notification-mobile .top .img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.setting-notification-mobile .top .img img {
+    width: 60vw;
+    height: auto;
+}
+
+.setting-notification-mobile .body {
+    margin-top: 75px;
+    margin-left: 100px;
+    font-family: var(--text2);
+}
+
+.setting-notification-mobile .body .title {
+    font-size: 25px;
+    padding: 10px;
+    font-family: var(--text-main);
+    color: var(--main-color);
+}
+
+.setting-notification-mobile .body .title img {
+    width: 25px;
+    height: auto;
+    transform: translateY(7px);
+}
+
+.setting-notification-mobile .body .type {
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--text2);
+    color: var(--text-color);
+}
+
+.setting-notification-mobile .body .type div {
+    display: inline-flex;
+}
+
+.setting-notification-mobile .body .type .switch {
+    height: 13px;
+    width: 26px;
+    background: var(--text-color);
+    border-radius: 96px;
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+  
+.setting-notification-mobile .body .type .switch:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.setting-notification-mobile .body .type .switch.active {
+    background-color: var(--active-color);
+    border-color: var(--active-color);
+}
+  
+.setting-notification-mobile .body .type .switch.active:hover {
+    border-color: rgba(69, 198, 91, 1);
+}
+
+.setting-notification-mobile .body .type .switch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--background);
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 8px var(--text-color);
+}
+
+.setting-notification-mobile .body .type .switch.active::after {
+    margin-left: 50%;
+}  
+
+@media only screen and (min-width: 768px){
+      
+    .setting-notification-mobile {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 767.5px){
+      
+    .setting-notification {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 670px){
+    .setting-notification-mobile .body {
+        margin-left: 0;
+        /* margin-top: 100px; */
+    }
+    .setting-notification-mobile .top .title .text {
+        top: 10vw;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .setting-notification-mobile .top .title .text {
+        top: 13vw;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .setting-notification-mobile .top .title .text {
+        top: 17vw;
+        font-size: 20px;
+    }
+    .setting-notification-mobile .body .title {
+        font-size: 20px;
+    }
+    .setting-notification-mobile .body .type {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .setting-notification-mobile .body .title {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .setting-notification-mobile .top .title .text {
+        top: 20vw;
+        font-size: 15px;
+    }
+    .setting-notification-mobile .body .title {
+        font-size: 18px;
+    }
+    .setting-notification-mobile .body .type {
+        font-size: 15px;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+
+/**************************** back to top ****************************/
+
+.back-to-top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+.back-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 50px;
+  color: #fff;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+.back-to-top:active {
+  background-color: #555;
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+/* @media (min-width: 500px) {
+  
+  .back-to-top {
+    margin: 30px;
+  }
+}
+ */
+
+ 
+/* Change styles for span and cancel button on extra small screens */  
+
+@media only screen and (min-width: 1024px){
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    right: 30px;
+  }
+  .back-to-top::after {
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1023px){
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+  }
+  .back-to-top::after {
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+:root{
+  --background: #ffff;
+  --main-color:#fe7a15;
+  --second-color:#537ec8;
+  --third-color:#10316b;
+  --text-color:black;
+  --background2:#ECECEB ;
+  --two-text-color:#727272;
+
+
+  --text-main: cursive;
+  --text2: 'Raleway',sans-serif;
+}
+
+
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 0 150px;
+}
+.faq .container-faq{
+  max-width: 1200px;
+  padding: 0 20px;
+
+}
+
+.faq .header .title {
+  color: var(--main-color);
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: var(--text-main);
+}
+
+.faq .header p {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.faq .parent-tab,
+.faq .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+
+.faq .parent-tab label,
+.faq .child-tab label{
+  background: var(--background2);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.faq label span{
+  color: var(--main-color);
+font-family: var(--text-main);
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px var(--main-color);
+}
+
+.faq .parent-tab label:hover{
+  background: var(--main-color);
+}
+
+.faq .parent-tab label:hover span{
+  color: var(--background);
+}
+
+.faq .parent-tab input:checked ~ label,
+.faq .child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: var(--main-color);
+}
+
+.faq .parent-tab input:checked ~ label span,
+.faq .child-tab input:checked ~ label span{
+  color: var(--background);
+}
+
+.faq .parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: var(--main-color);
+  display: block;
+  background: var(--background);
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px var(--main-color);
+}
+.faq .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.faq .parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.faq .parent-tab input:checked ~ label .icon i:before,
+.faq .child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.faq .parent-tab .content,
+.faq .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: var(--background);
+  color: var(--four-color);
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+.faq .parent-tab input:checked ~ .content,
+.faq .child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.faq .tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.faq .parent-tab .content p,
+.faq .child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.faq .child-tab .sub-content p{
+  font-size: 15px;
+}
+.faq input[type="radio"],
+.faq input[type="checkbox"]{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .faq .header .title {
+    font-size: 35px;
+  }
+
+  .faq .header p {
+    font-size: 17px;
+  }
+  .faq .parent-tab .content p, .faq .child-tab .sub-content p  {
+    font-size: 14px;
+  }
+  .faq label span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .faq .header .title {
+    font-size: 30px;
+  }
+
+  .faq .header p {
+    font-size: 15px;
+  }
+  .faq .parent-tab .content p, .faq .child-tab .sub-content p  {
+    font-size: 13px;
+  }
+
+  .faq label span {
+    font-size: 15px;
+  }
+  .faq .parent-tab label .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+  }
+}

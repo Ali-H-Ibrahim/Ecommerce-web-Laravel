@@ -1,0 +1,197 @@
+
+
+:root{
+    --background: white;
+    --background2: #ececeb;
+    --main-color:#fe7a15;
+    --second-color:#537ec8;
+    --third-color:#10316b;
+    --text-color:black;
+    --two-text-color: #727272;
+  
+  
+    --text-main: cursive;
+    --text2: 'Raleway',sans-serif;
+  }
+  
+ 
+
+/***************************** header laptop *****************************/
+
+.header-laptop {
+    background-color: var(--background);
+    /* background-image: linear-gradient(to right, var(--headerColor) , var(--twoHeaderColor)); */
+    padding: 15px 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-laptop i {
+    font-size: 27px;
+    padding: 0 2%;
+    cursor: pointer;
+    color: var(--text-color);
+    transform: translate3d(0%,20%,0);
+}
+
+.header-laptop i:hover {
+    color: var(--two-text-color);
+    cursor: pointer;
+}
+
+.header-laptop .logo a{
+    color: var(--main-color);
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    padding: 0;
+    display: initial;
+}
+
+.header-laptop .logo a:hover {
+    text-decoration: none;   
+}
+.header-laptop .logo img {
+    width: 90px;
+    transform: translate3d(0%,-20%,0);
+}
+
+.header-laptop .categories {
+    display: inline-flex;
+}
+.header-laptop .categories .dropdown {
+    padding: 8px 6px;
+    font-size: 16px;
+}
+
+.header-laptop .categories ul {
+    font-size: 14px;
+}
+
+.header-laptop .categories button,.header-laptop .categories button:focus {
+    border: none;
+    background: none;
+    outline: none;
+    font-family: var(--text2);
+    color: var(--text-color);
+}
+
+.header-laptop .dropdown-submenu {
+    position: relative;
+}
+  
+.header-laptop .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.header-laptop .search input[type=search] {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    background: none;
+    color: var(--text-color);
+    padding-bottom: 5px;
+    transform: translate3d(0,30%,0);
+    font-size: 15px;
+    font-family: var(--text2);
+}
+
+.header-laptop .search input[type=search]::placeholder {
+    color: var(--two-text-color);
+}
+
+.header-laptop .search input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+}
+.header-laptop .search input[type=search]:focus::-webkit-search-cancel-button {
+    opacity: .3;
+    pointer-events: all;
+}
+
+.header-laptop .search input[type=search]:hover {
+    border: none;
+    border-bottom: 2px solid var(--two-text-color);
+}
+
+.header-laptop .search input[type=search]:focus {
+    outline: none;
+}
+.header-laptop .search input[type=search]:focus ~ #search-icon {
+    transform: translate3d(0,30%,0);
+    transition: all 1s;
+}
+
+.header-laptop .search i {
+    transform: translate3d(-100%,30%,0);
+    transition: all 1s;
+}
+
+/****************************** last icons ******************************/
+
+.header-laptop .person{
+    margin: 0;
+    transform: translate3d(0%,25%,0);
+    /* z-index: 5; */
+}
+.header-laptop .person button,.header-laptop .person button:focus {
+    border: none;
+    background: none;
+    outline: none;
+}
+.header-laptop .person ul {
+    z-index: 20;
+    font-size: 13px;
+}
+.header-laptop .person img {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 50%;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.header-laptop .icons .sub-icons {
+    display: inline-flex;
+    cursor: pointer;
+    width: 20%;
+}
+
+.header-laptop .notifications {
+    display: block;
+}
+.header-laptop .notifications .icon_wrap {
+    transform: none;
+}
+
+.header-laptop .notifications .icon_wrap span.badge {
+    transform: translate3d(15px, -25px, 0);
+    font-size: 10px;
+    background: #dc3545;
+}
+
+.header-laptop .icons .notification_dd {
+    transform: none;
+}
+
+.header-laptop .icons .notification_dd .notification_ul {
+    margin: 0;
+}
+
+.header-laptop .icons .popup {
+    top: 210px;
+    right: 85px;
+    left: auto;
+}

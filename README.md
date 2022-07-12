@@ -41,3 +41,16 @@
 ![Screenshot 2022-07-12 233014](https://user-images.githubusercontent.com/102704259/178590095-0187f200-2e7a-4edb-917d-db0b16e37b6e.png)
 
 
+
+# Installation method🚀
+### 📝Register the first admin to not make the registration interface for the admin to increase security for registration
+1. > * `php artisan migrate`
+1. > * `php artisan tinker`
+1. > * `$user = new App\User;`
+1. > * `$user->name = "ali";`
+1. > * `$user->email = "ali@gmail.com";`
+1. > * `$user->password=bcrypt('123456');`
+1. > * `$user->Admin=1;`
+1. > * `$user->save()`
+1. > * `php artisan serv`
+### 📒To register the rest of the administrator, we make him register as a normal user, and then the admin gives him the permissions as he wants

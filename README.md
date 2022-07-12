@@ -30,6 +30,7 @@
 
 ![Screenshot 2022-07-12 232143](https://user-images.githubusercontent.com/102704259/178590433-77db22e6-191b-4b0e-8517-4a52fe473828.png)
 ![Uploading Screenshot 2022-07-12 232310.png…]()
+![fff](https://user-images.githubusercontent.com/102704259/178591720-1d23b9ef-5f1d-45ac-8a7a-d29ad6c22576.png)
 
 
 # admin pages

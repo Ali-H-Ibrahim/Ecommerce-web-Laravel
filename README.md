@@ -24,16 +24,17 @@
 1. > * When the product is placed in the favourites, notifications are activated when an offer occurs on the product or when it becomes available
 
 ## Support all screens 💻📱
-# user pages
+
+# customers pages❤️❤️
 
 ![Screenshot 2022-07-12 232002](https://user-images.githubusercontent.com/102704259/178589905-7418df89-091d-4ac1-a772-8bc1d88edd46.png)
 
 ![Screenshot 2022-07-12 232143](https://user-images.githubusercontent.com/102704259/178590433-77db22e6-191b-4b0e-8517-4a52fe473828.png)
-![Uploading Screenshot 2022-07-12 232310.png…]()
+
 ![fff](https://user-images.githubusercontent.com/102704259/178591720-1d23b9ef-5f1d-45ac-8a7a-d29ad6c22576.png)
 
 
-# admin pages
+# admin pages❤️❤️
 
 ![Screenshot 2022-07-12 232540](https://user-images.githubusercontent.com/102704259/178590059-b0d4618c-e188-41a4-babd-a6a0667a5c70.png)
 ![Screenshot 2022-07-12 233124](https://user-images.githubusercontent.com/102704259/178590071-daef3314-b0e2-4988-9af9-3e11212945d4.png)
